@@ -99,7 +99,6 @@ class TransactionTests(TestCase):
             '/add', {"payer": "DANNON", "points": 300}, format='json')
 
         self.assertEqual(response.status_code, 400)
-        print(response.data)
 
         # Invalid timestamp format
         response = self.client.post(
