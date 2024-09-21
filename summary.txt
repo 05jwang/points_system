@@ -1,0 +1,27 @@
+1. Why did you choose the tools, libraries, and language you used for the coding exercise?
+I chose to use Django because of its smaller size and ease of use, and the fact that SQLite is built in. I initially considered using Java Spring, since I have experience
+using Java Spring in a professional setting, but I decided against it because of the need to separately set up a SQL server. I also considered using Flask, but I decided against 
+it because of the need to set up a database and integrate third party packages to interface with it. Django comes pre packaged with everything I needed for this project and
+is built for rapid development, which made it the best choice. Being easy to set up was a specific concern for this project, as it should to be able to be built and ran by a user 
+without prior knowledge of programming, as per the requirements.
+
+I considered using MongoDB Atlas, primarily because the job description mentioned noSQL databases. However, I decided against it because of difficulty in sharing the authentication
+information securely in a public repository. Setting up a local MongoDB instance was a possibility, but SQLite was built in to Django and required no setup, so I decided to just 
+use that.
+
+2. What are the advantages and disadvantages of your solution?
+Compared to a framework such as Java Spring, Django is slower, mainly because Python is an interpreted language and Java is a compiled language. However, that speed difference is 
+not noticeable for a small project such as this. Django also comes with SQLite built in, which is a lightweight database that is perfect for small projects like this. SQLite's 
+is a file based database, which makes it easy to set up and use, but doesn't offer the same performance and features that a server based database would, such as user authentication
+or the ability for multiple writers to write concurrently. 
+
+An advantage of this solution over another Python framework such as Flask is that Django is more easily extendable, with a large community and many packages available. If this
+were a real project, it would only be a matter of time before it needed admin functionality, user authentication, or other features that Django has built in. Flask, on the other 
+hand, is more oriented towards microservices, which gives it a speed advantage over Django but makes it less feature rich out of the box. This approach allows developers to pick 
+and choose only the packages they need, giving Flask its speed advantage over Django. However, this project is not large enough to require that speed advantage.
+
+3. What has been a favorite school/personal project thus far? What about it that challenged you?
+One of my favorite projects was creating the wordle game entirely in assembly for a computer architecture class. I really enjoy the process of learning by doing, and this project 
+required approaching challenges in a way I had never done before. As extra credit, my professor asked us to create a GUI for the game, which had not been gone over in class. I 
+started by trying to manipulate individual pixels, then worked up to coloring in rectangles, then drawing the game board, and finally the entire game. It was incredibly rewarding 
+to see the game come together piece by piece, and I learned a lot about what goes on behind the scenes when a run a command in a higher level language. 
